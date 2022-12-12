@@ -1,5 +1,5 @@
 import "./Body.css";
-// import yan from "../../imgs/yan.png";
+import yan from "../../imgs/yan.png";
 import { Link } from "react-router-dom";
 
 const Body = () => {
@@ -26,7 +26,7 @@ const Body = () => {
           </Link>
         </div>
         <div className="body-right">
-          {/* <img src={yan} alt="y"/> */}
+          <img src={yan} alt="y"/>
           
         </div>
       </div>
