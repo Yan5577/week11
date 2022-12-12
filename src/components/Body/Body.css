@@ -1,0 +1,195 @@
+.body-bg {
+  background: lightsteelblue;
+  background-size:auto;
+  animation: gradient 15s ease infinite;
+  height: 750px;
+}
+
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto 75px auto;
+  padding: 50px 0px;
+  width: 80%;
+  position: relative;
+}
+
+.body-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin-left: 15%;
+  width: 70%;
+  z-index: 50;
+}
+
+.body-right {
+  display: flex;
+  width: 50%;
+}
+
+.body-right img {
+  width: 350px;
+  z-index: 20;
+  top: 20px;
+  right: 125px;
+  position: absolute;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+.body-left i {
+  color: darkblue;
+  font-size: 45px;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+.refresh-btn {
+  width: 200px;
+  border-radius: 0.375rem 0.375rem 1.5rem;
+  border-width: 1.5px;
+  --tw-border-opacity: 1;
+  border-color: darkblue;
+  padding: 0.5rem 2.25rem;
+  font-weight: 500;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 100%;
+  background-color: transparent;
+  line-height: inherit;
+  color: darkblue;
+  margin: 0;
+  transition: 300ms ease-in;
+  margin-top: 20px;
+  padding: 10px 40px;
+  height: 45px;
+}
+
+.refresh-btn:hover {
+  background-color:orange;
+}
+
+.body-title {
+  color: #f8f9fc;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: -25px;
+}
+
+/* Background gradient */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive */
+
+/* Extra-extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1700px) {
+  .body-container {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1250px) {
+  .body-right img {
+    right: 65px;
+  }
+
+  .body-title {
+    font-size: 54px;
+  }
+
+  .body-left {
+    margin-left: 0px;
+  }
+
+  .body-text {
+    width: 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .body-right img {
+    width: 550px;
+    right: 0px;
+  }
+  .body-bg {
+    height: 500px;
+  }
+  .body-container {
+    width: 100%;
+  }
+  .body-title {
+    font-size: 48px;
+  }
+  .body-text {
+    width: 85%;
+    margin: 20px 0px 5px 0px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .body-bg {
+    height: 400px;
+  }
+
+  .body-left {
+    width: 90%;
+  }
+
+  .body-container {
+    padding: 20px 0px;
+  }
+
+  .body-right img {
+    width: 350px;
+    top: 30px;
+    right: 0px;
+  }
+  
+  .body-title {
+    font-size: 40px;
+    margin-bottom: -20px;
+  }
+
+  .body-text {
+    font-size: 14px;
+  }
+
+  .body-left .refresh-btn {
+    font-size: 14px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 0px 20px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .body-bg {
+    height: 400px;
+  }
+
+  .body-left {
+    width: 100%;
+  }
+
+  .body-right {
+    display: none;
+  }
+}
