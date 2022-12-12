@@ -3,8 +3,8 @@ import Header from "./components/Header/Header";
 import "./App.css";
 import HomePage from './pages/homePage';
 import AboutPage from './pages/AboutPage';
-// import {faker} from '@faker-js/faker';
 import ExperiencePage from './pages/ExperiencePage';
+import EducationPage from './pages/EducationPage';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/experience" element={<ExperiencePage />} />
+      <Route path="/education" element={<EducationPage />} />
 
       </Routes>
       </div>
